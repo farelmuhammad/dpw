@@ -1,0 +1,206 @@
+<html lang="en">
+    <!-- Judul Website -->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Website</title>
+    </head>
+
+    <!-- Style -->
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial;
+        }
+
+        nav{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            padding: 10px 90px;
+            box-sizing: border-box;
+            background: rgba(54, 54, 54, 0.6);
+            border-bottom: 1px solid #fff;
+        
+        }
+
+        nav .logo{
+            padding: 3px 3px;
+            height: 1px;
+            float: left;
+            color: #fff;
+        }
+
+        nav ul{
+            list-style: none;
+            float: right;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li a{
+            line-height: 80px;
+            color: #fff;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        nav ul li a:hover{
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 6px;
+        }
+
+        section{
+            width: 100%;
+            height: 100vh;
+            background: url(frontend/images/background.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .qw{
+            text-align: center;
+            font-size: 28px;
+            font-family: Arial;
+            text-shadow: 10px 10px 5px #1f1717;
+            padding-top: 10cm;
+            
+        }
+
+        .baris{
+            display: flex;
+            padding-right: 35px;
+            padding-top: 250px;
+            padding-bottom: 20px;
+        }
+
+        .kolom{
+            width: 50%;
+            text-align: center;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        img{
+            width: 300px;
+            height: 200px;
+            margin-top: 5px;
+            margin-left: 90px;
+        }
+
+        .kolom h2{
+            margin-left: 100px;
+            font-family: Arial;
+        }
+
+        .kolom .writer{
+            margin-left: 100px;
+            margin-top: 7px;
+            font-family: Arial;
+            color: black;
+            font-weight: bold;
+        }
+
+        .kolom p{
+            margin-left: 650px;
+            font-family: Arial;
+            color: black;
+        }
+
+        a.button{
+            background: #cf0404;
+            border-radius: 20px;
+            margin-top: 100px;
+            padding: 15px 20px 15px 20px;
+            color: #fff;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        
+        .kolom .isi{
+            margin: 0px 0px 10px 0px;
+            padding: 10px 0px 10px 0px;
+            margin-left: 90px;
+            font-family: Arial;
+            text-align: justify;
+        }
+
+        .kolom .link{
+            margin: 10px 0px 10px 0px;
+            padding: 10px 0px 10px 0px;
+            margin-left: 90px;
+        }
+
+        a.button:hover{
+            text-decoration: none;
+        }
+
+        footer{
+            background: black;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+    </style>
+
+    <!-- body -->
+    <body>
+        <!-- navigasi -->
+        <nav>
+            <div class="logo"><img src="frontend/images/20200923_174933.png" class="gambar" style="width: 100px; height: 100px; margin: auto;"></div>
+            <ul>
+                <li><a href="website.html">Home</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- section -->
+        <section>
+            <div class="qw">
+                <p>Welcome to My Blog</p>
+            </div>
+ 
+            <div class="baris">
+
+            <div class="kolom">
+                <img src="frontend/images/imk.png"><br><br>
+                <h2>HTML | Pengertian, elemen, fungsi</h2>
+                <p class="writer">Writer by Muhammad Farel</p>
+                <p class="isi">HTML terdiri dari kombinasi teks dan simbol yang disimpan dalam sebuah file.
+                     Dalam membuat file HTML, terdapat standar atau format khusus yang harus diikuti.
+                      Format tersebut telah tertuang dalam standar kode internasional atau ASCII 
+                      (American Standard Code for Information Interchange). </p>
+                <p class="link"><a href="#" class="button">Read More</a></p>
+            </div>
+
+            <div class="kolom">
+                <img src="frontend/images/etika.jpeg"><br><br>
+                <h2>JavaScript | Pengertian, fungsi, manfaat</h2>
+                <p class="writer">Writer by Muhammad Farel</p>
+                <p class="isi">JavaScript adalah suatu bahasa kode atau pemrograman yang digunakan untuk menciptakan
+                     sekaligus mengendalikan konten website agar menjadi dinamis. Contoh konten situs yang dinamis
+                      adalah apa pun yang dapat bergerak atau mengubah apa pun yang tampak di layar tanpa mengharuskan
+                       Anda memuat ulang laman situs tersebut secara manual.</p>
+                <p class="link"><a href="#" class="button">Read More</a></p>
+            </div>
+
+            </div>
+
+            <footer>
+                <p>@copyright 2022 || by Muhammad Farel</p>
+            </footer>
+        </section>
+    </body>
+    <script src="scripts/scripts.js"></script>
+</html>

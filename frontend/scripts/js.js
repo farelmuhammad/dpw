@@ -1,0 +1,1 @@
+document.body.style.backgroundImage = "URL(..frontend/images/background.jpg)"
